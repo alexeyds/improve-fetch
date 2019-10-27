@@ -4,7 +4,7 @@ import pkg from './package.json';
 export default [
   {
     input: 'lib/improve_fetch.js',
-    output: { file: 'dist/improve-fetch.js', format: 'cjs', indent: false },
+    output: { file: pkg.main, format: 'cjs', indent: false },
     external: [
       ...Object.keys(pkg.dependencies || {}),
       ...Object.keys(pkg.peerDependencies || {})
