@@ -1,0 +1,39 @@
+{
+  "name": "improve-fetch",
+  "version": "0.1.0",
+  "description": "Set of wrappers for fetch",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "test": "./test.sh test",
+    "lint": "eslint {src,test}/**/*{js,jsx}",
+    "test-publish": "npm test && npm run-script build && npm publish",
+    "build": "rollup -c && ./test.sh test/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexeyds/improve-fetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexeyds/improve-fetch/issues"
+  },
+  "homepage": "https://github.com/alexeyds/improve-fetch",
+  "keywords": [],
+  "author": "Alexey D",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "enhanced-tape": "^0.1.1",
+    "enhanced-tape-runner": "^1.1.2",
+    "eslint": "^6.6.0",
+    "rollup": "^1.25.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
