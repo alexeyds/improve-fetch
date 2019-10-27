@@ -11,7 +11,7 @@
     "test": "./test.sh test",
     "lint": "eslint {src,test}/**/*{js,jsx}",
     "test-publish": "npm test && npm run-script build && npm publish",
-    "build": "rollup -c && ./test.sh test/dist"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,8 @@
     "enhanced-tape": "^0.1.1",
     "enhanced-tape-runner": "^1.1.2",
     "eslint": "^6.6.0",
+    "fetch-mock": "^8.0.0-alpha.11",
+    "node-fetch": "^2.6.0",
     "rollup": "^1.25.2",
     "rollup-plugin-babel": "^4.3.3",
     "tap-spec": "^5.0.0",
