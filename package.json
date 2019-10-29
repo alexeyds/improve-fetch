@@ -10,7 +10,8 @@
   "scripts": {
     "test": "./test.sh test",
     "lint": "eslint {src,test}/**/*{js,jsx}",
-    "test-publish": "npm test && npm run-script build && npm publish",
+    "test-dist": "",
+    "prepare": "npm test && npm run-script build && npm run-script test-dist",
     "build": "rollup -c"
   },
   "repository": {
@@ -35,7 +36,7 @@
     "node-fetch": "^2.6.0",
     "rollup": "^1.25.2",
     "rollup-plugin-babel": "^4.3.3",
-    "tap-spec-dot": "^0.1.1",
+    "tap-spec-dot": "^0.1.2",
     "tape": "^4.11.0"
   }
 }
