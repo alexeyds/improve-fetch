@@ -1,6 +1,6 @@
 {
   "name": "improve-fetch",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Set of wrappers for fetch",
   "main": "dist/improve-fetch.js",
   "files": [
